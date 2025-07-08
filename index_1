@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ben Lisenby | Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Ben Lisenby</h1>
+    <nav>
+      <a href="#About">About</a>
+      <a href="#Portfolio">Portfolio</a>
+       <a href="#Blog">About</a>
+      <a href="#Contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Ben Lisenby | BS Mechanical Engineering | Taylor University Class of 2027</h2>
+    <p>Mechanical Design | Numerical Methods | Engineering Analysis </p>
+    <a href="#portfolio">View My Work</a>
+  </section>
+
+  <section id="About">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Ben Lisenby</strong>, an Junior engineering student at Taylor University with relevant experience in design, analysis, and coding.</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div>
+      <h3>Project Title</h3>
+      <p>Short description of a project...</p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog & Notes</h2>
+    <p>Coming soon: posts on CFD, simulations, and engineering methods.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: your.email@example.com</p>
+    <p>GitHub: github.com/YOUR_USERNAME</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ben Lisenby</p>
+  </footer>
+</body>
+</html>
