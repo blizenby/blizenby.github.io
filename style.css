@@ -90,7 +90,9 @@ button:hover {
   border-radius: 6px;
   font-weight: bold;
 }
-#home,
-#contact {
+.section {
+  display: none;
+}
+#home {
   display: block;
 }
