@@ -5,16 +5,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showSection(id) {
     sections.forEach(section => {
-      section.style.display = 'none';
+      // Only hide sections that are NOT contact
+      if (section.id !== 'contact') {
+        section.style.display = 'none';
+      }
     });
 
     const target = document.getElementById(id);
-    if (target) {
+    if (target && target.id !== 'contact') {
       target.style.display = 'block';
     }
   }
 
-  // Default: show only home on initial load
+  // Show home by default on load
   showSection('home');
 
   navLinks.forEach(link => {
