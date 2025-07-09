@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      e.preventDefault(); // Stop jump
+      e.preventDefault();
 
       const targetId = link.getAttribute('href').substring(1);
       const target = document.getElementById(targetId);
