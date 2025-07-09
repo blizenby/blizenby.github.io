@@ -90,4 +90,7 @@ button:hover {
   border-radius: 6px;
   font-weight: bold;
 }
+.section {
+  display: none;
+}
 
