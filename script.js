@@ -23,15 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-  function showSection(id) {
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(section => {
-    section.style.display = 'none';
-  });
-
-  const selected = document.getElementById(id);
-  if (selected) {
-    selected.style.display = 'block';
-  }
+  
 }
 });
