@@ -1,16 +1,26 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('nav-links');
-  const links = navLinks.querySelectorAll('a');
+  const navLinks = document.querySelectorAll('nav a');
+  const allSections = document.querySelectorAll('.section');
 
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
-  });
+  navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault(); // Stop jump
 
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('show');
+      const targetId = link.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+
+      allSections.forEach(section => {
+        if (section.id === "home" || section.id === "contact") {
+          section.style.display = "block";
+        } else {
+          section.style.display = "none";
+        }
+      });
+
+      if (target) {
+        target.style.display = "block";
+      }
     });
   });
 });
