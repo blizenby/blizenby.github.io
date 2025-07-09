@@ -64,11 +64,20 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:benlisenby@outlook.com">benlisenby@outlook.com</a></p>
      <p>LinkedIn: <a href="https://www.linkedin.com/in/ben-lisenby-mechanical-engineer/" target="_blank">linkedin.com/in/ben-lisenby-mechanical-engineer/</a></p>
-      <form name="comment-form" method="POST" netlify>
-        <label for="comment">Leave a message for me here:</label><br/>
-        <textarea name="comment" id="comment" rows="5" cols="40" placeholder="Your comment here..." required></textarea><br/>
-        <button type="submit">Submit</button>
-      </form>
+      <form name="comment-form" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="comment-form" />
+  
+  <label for="name">Your Name:</label><br/>
+  <input type="text" name="name" id="name" required /><br/><br/>
+
+  <label for="email">Your Email:</label><br/>
+  <input type="email" name="email" id="email" required /><br/><br/>
+
+  <label for="comment">Message:</label><br/>
+  <textarea name="comment" id="comment" rows="5" required></textarea><br/><br/>
+
+  <button type="submit">Send Message</button>
+</form>
     </div>
   </section>
 
