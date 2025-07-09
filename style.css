@@ -90,6 +90,7 @@ button:hover {
   border-radius: 6px;
   font-weight: bold;
 }
-.hidden-section {
-  display: none;
+#home,
+#contact {
+  display: block;
 }
