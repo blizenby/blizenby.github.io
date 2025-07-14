@@ -132,31 +132,29 @@ button:hover {
 .timeline-entry {
   margin-bottom: 30px;
   position: relative;
+  padding-left: 25px; /* Add space to avoid overlap */
 }
 
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: -12px;
-  top: 0;
-  width: 14px;
-  height: 14px;
+  left: 0;
+  top: 4px;
+  width: 12px;
+  height: 12px;
   background-color: #3366cc;
   border-radius: 50%;
 }
 
 .timeline-date {
+  margin-bottom: 4px;
   font-weight: bold;
-  color: #555;
-  margin-bottom: 5px;
   display: block;
 }
 
 .timeline-title {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #3366cc;
-  text-decoration: none;
+  margin-bottom: 5px;
+  display: inline-block;
 }
 
 .timeline-title:hover {
