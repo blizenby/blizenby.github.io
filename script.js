@@ -16,36 +16,37 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Show home on load
+  // Show 'home' by default
   showSection('home');
 
-  // Nav bar links
+  // Handle nav bar buttons
   navLinks.forEach(link => {
     link.addEventListener('click', e => {
       e.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-      showSection(targetId);
+      const id = link.getAttribute('href').substring(1);
+      showSection(id);
     });
   });
 
-  // Timeline links to portfolio subsections
-  const timelineLinks = document.querySelectorAll('.timeline a');
+  // Handle all internal links like #taylor, #internship, etc.
+  const internalLinks = document.querySelectorAll('a[href^="#"]');
 
-  timelineLinks.forEach(link => {
+  internalLinks.forEach(link => {
     link.addEventListener('click', e => {
-      e.preventDefault();
-      const anchorId = link.getAttribute('href').substring(1);
+      const id = link.getAttribute('href').substring(1);
+      const targetAnchor = document.getElementById(id);
 
-      // 1. Show the portfolio section
+      if (targetAnchor && !targetAnchor.closest('#portfolio')) return; // Let it scroll if it's outside portfolio
+
+      e.preventDefault();
       showSection('portfolio');
 
-      // 2. Scroll to the target inside portfolio after a short delay
       setTimeout(() => {
-        const targetAnchor = document.getElementById(anchorId);
-        if (targetAnchor) {
-          targetAnchor.scrollIntoView({ behavior: 'smooth' });
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-      }, 200); // Wait for section to be visible
+      }, 200);
     });
   });
 });
