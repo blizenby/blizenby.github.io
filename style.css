@@ -195,14 +195,21 @@ button:hover {
   gap: 8px;
 }
 
+.timeline-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.timeline-title a:hover {
+  text-decoration: underline;
+}
+
 .timeline-icon {
   width: 20px;
   height: 20px;
 }
 
-.timeline-title:hover {
-  text-decoration: underline;
-}
+
 html {
   scroll-behavior: smooth;
 }
