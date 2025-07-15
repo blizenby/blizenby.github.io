@@ -224,10 +224,10 @@ html {
   background-color: #3366cc;
   color: #fff;
   border: none;
-  border-radius: 35%;
+  border-radius: 50%;
   width: 30px;
   height: 30px;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   display: none; /* Hidden by default */
