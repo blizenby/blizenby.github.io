@@ -153,13 +153,18 @@ button:hover {
   margin-bottom: 4px;
 }
 
+
 .timeline-title {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #3366cc;
-  text-decoration: none;
-  margin-bottom: 4px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.timeline-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .timeline-title:hover {
