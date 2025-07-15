@@ -14,14 +14,25 @@ header .tagline {
   font-size: 1.2rem;
   margin: 0.5rem 0;
 }
-nav a {
-  color: white;
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: bold;
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
+
+nav a {
+  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #3366cc;
+  transition: background-color 0.3s;
+}
+
 nav a:hover {
-  text-decoration: underline;
+  background-color: #f0f4ff;
 }
 .section {
   padding: 2rem 1rem;
