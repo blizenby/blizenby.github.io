@@ -4,17 +4,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.section');
 
   function showSection(id) {
-    sections.forEach(section => {
-      if (section.id !== 'contact') {
-        section.style.display = 'none';
-      }
-    });
-
-    const target = document.getElementById(id);
-    if (target && target.id !== 'contact') {
-      target.style.display = 'block';
+  sections.forEach(section => {
+    if (section.id === 'contact') {
+      section.style.display = 'block'; // always visible
+    } else {
+      section.style.display = 'none';
     }
+  });
+
+  const target = document.getElementById(id);
+  if (target) {
+    target.style.display = 'block';
   }
+}
 
   // Show 'home' by default
   showSection('home');
