@@ -1,145 +1,168 @@
+:root {
+  --primary-color: #5D5C5B;
+  --accent-color: #DCDCDC;
+  --background-color: #f7f7f7;
+  --text-color: #333;
+  --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  background: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
+
 header {
   position: sticky;
   top: 0;
   z-index: 999;
-  background-color: #5D5C5B; /* Keep your dark blue */
+  background-color: var(--primary-color);
   color: white;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem 1.5rem;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow-light);
 }
-header .tagline {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
+
 header h1 {
-  font-size: 2.5rem;
-  color: white;
+  font-size: 2.6rem;
+  margin-bottom: 0.5rem;
+}
+
+header .tagline {
+  font-size: 1.15rem;
   margin: 0;
 }
 
 nav a {
-  margin: 0 10px;
-  padding: 6px 12px;
-  border-radius: 8px;
+  margin: 0 12px;
+  padding: 8px 14px;
+  border-radius: 10px;
   text-decoration: none;
-  color: #5D5C5B;
-  transition: background-color 0.3s;
+  color: var(--primary-color);
+  font-weight: 500;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #f0f4ff;
+  background-color: var(--accent-color);
 }
+
 .section {
-  padding: 2rem 1rem;
-  max-width: 900px;
+  padding: 3rem 1rem;
+  max-width: 1000px;
   margin: auto;
 }
+
 .section.alt {
-  background: #eef3f8;
+  background-color: var(--accent-color);
 }
+
 .projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.5rem;
 }
+
 .portfolio-subsection {
-  margin-top: 40px;
+  margin-top: 3rem;
 }
 
 .portfolio-subsection h3 {
-  border-bottom: 2px solid #5D5C5B;
-  padding-bottom: 6px;
-  margin-bottom: 20px;
-  color: #5D5C5B;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+  font-size: 1.6rem;
 }
 
 .project {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  padding: 16px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: var(--shadow-medium);
+  padding: 1.5rem;
   display: flex;
-  gap: 16px;
+  gap: 1.25rem;
+  flex: 1 1 45%;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .project img {
-  width: 150px;
-  height: auto;
-  border-radius: 8px;
+  width: 160px;
+  border-radius: 10px;
   object-fit: cover;
 }
 
 .project h4 {
-  margin: 0 0 6px;
-  color: #333;
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
 }
+
 .project p {
-  margin: 0.5rem 1rem 1rem;
+  margin: 0.5rem 0 0;
 }
+
 footer {
-  background: #222;
+  background: #1f1f1f;
   color: #ccc;
   text-align: center;
-  padding: 1rem;
+  padding: 1.25rem;
 }
+
 form {
-  margin-top: 20px;
+  margin-top: 2rem;
   max-width: 600px;
 }
 
 form input,
 form textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 1rem;
 }
 
 form button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 1rem;
-  background-color: #5D5C5B;
+  background-color: var(--primary-color);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
 }
 
 form button:hover {
-  background-color: #264a99;
+  background-color: #464645;
 }
+
 textarea {
   width: 100%;
   max-width: 100%;
 }
+
 button {
-  padding: 0.3rem 1rem;
+  padding: 0.4rem 1.2rem;
   background: #174e8c;
   color: white;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   margin-top: 0.5rem;
   cursor: pointer;
 }
+
 button:hover {
   background: #123a6d;
 }
+
 .btn {
   display: inline-block;
   padding: 0.75rem 1.25rem;
@@ -149,14 +172,9 @@ button:hover {
   border-radius: 6px;
   font-weight: bold;
 }
-.section {
-  display: none;
-}
-#contact {
-  display: block; /* Always visible */
-}
+
 .timeline {
-  border-left: 3px solid #5D5C5B;
+  border-left: 3px solid var(--primary-color);
   margin-left: 30px;
   padding-left: 20px;
   position: relative;
@@ -164,28 +182,26 @@ button:hover {
 
 .timeline-entry {
   position: relative;
-  margin-bottom: 30px;
-  padding-left: 25px; /* 💡 Give space for the dot */
+  margin-bottom: 40px;
+  padding-left: 30px;
 }
 
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: -20px;  /* 💡 Dot sits nicely in the border line */
+  left: -21px;
   top: 6px;
-  width: 12px;
-  height: 12px;
-  background-color: #5D5C5B;
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary-color);
   border-radius: 50%;
 }
 
 .timeline-date {
-  display: block;
   font-weight: bold;
-  color: #555;
-  margin-bottom: 4px;
+  color: #666;
+  margin-bottom: 5px;
 }
-
 
 .timeline-title {
   font-size: 1.1rem;
@@ -204,94 +220,11 @@ button:hover {
   text-decoration: underline;
 }
 
-.timeline-icon {
-  width: 20px;
-  height: 20px;
-}
-
-
-html {
-  scroll-behavior: smooth;
-}
-@media (max-width: 768px) {
-  .project {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .project img {
-    width: 100%;
-  }
-}
-#scrollToTopBtn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-  background-color:#5D5C5B;
-  color: #fff;
-  border: none;
-  border-radius: 30%;
-  width: 50px;
-  height: 50px;
-  font-size: 15px;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  display: none; /* Hidden by default */
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s, transform 0.3s;
-}
-
-#scrollToTopBtn:hover {
-  background-color: #DCDCDC;
-  transform: scale(1.1);
-}
-#home {
-  display: block;
-}
-#home .btn {
-  display: block;
-  width: fit-content;
-  margin: 1.5rem auto;
-}
-.home-callout {
-  margin-top: 2rem;
-  background-color: #DCDCDC;
-  padding: 1.5rem;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.callout-buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.callout-buttons .btn {
-  background: #5D5C5B;
-  color: white;
-}
-
-.icon-link img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s;
-}
-
-.icon-link img:hover {
-  transform: scale(1.15);
-}
 .hero {
-  background: #DCDCDC;
-  padding: 3rem 1rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  background: var(--accent-color);
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  box-shadow: var(--shadow-medium);
 }
 
 .hero-content {
@@ -308,7 +241,7 @@ html {
   height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #5D5C5B;
+  border: 3px solid var(--primary-color);
 }
 
 .hero-text {
@@ -322,13 +255,102 @@ html {
   gap: 0.75rem;
   flex-wrap: wrap;
   padding: 0;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .skill-tags li {
-  background: #5D5C5B;
+  background: var(--primary-color);
   color: white;
-  padding: 0.4rem 0.75rem;
+  padding: 0.5rem 1rem;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.home-callout {
+  margin-top: 2.5rem;
+  background-color: var(--accent-color);
+  padding: 2rem;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: var(--shadow-light);
+}
+
+.callout-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.callout-buttons .btn {
+  background: var(--primary-color);
+  color: white;
+}
+
+.icon-link img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.icon-link img:hover {
+  transform: scale(1.2);
+}
+
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 999;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  box-shadow: var(--shadow-light);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #464645;
+  transform: scale(1.1);
+}
+
+.section {
+  display: none;
+}
+#home {
+  display: block;
+}
+#home .btn {
+  display: block;
+  width: fit-content;
+  margin: 1.5rem auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
 }
