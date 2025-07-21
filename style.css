@@ -41,7 +41,7 @@ nav a {
   padding: 8px 14px;
   border-radius: 10px;
   text-decoration: none;
-  color: var(--primary-color);
+  color: var(--text-color);
   font-weight: 500;
   transition: background-color 0.3s ease;
 }
