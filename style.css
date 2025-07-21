@@ -54,10 +54,10 @@ nav a:hover {
 }
 
 .portfolio-subsection h3 {
-  border-bottom: 2px solid #3366cc;
+  border-bottom: 2px solid #5D5C5B;
   padding-bottom: 6px;
   margin-bottom: 20px;
-  color: #3366cc;
+  color: #5D5C5B;
 }
 
 .project {
@@ -114,7 +114,7 @@ form textarea {
 form button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #3366cc;
+  background-color: #5D5C5B;
   color: white;
   border: none;
   border-radius: 6px;
@@ -156,7 +156,7 @@ button:hover {
   display: block; /* Always visible */
 }
 .timeline {
-  border-left: 3px solid #3366cc;
+  border-left: 3px solid #5D5C5B;
   margin-left: 30px;
   padding-left: 20px;
   position: relative;
@@ -175,7 +175,7 @@ button:hover {
   top: 6px;
   width: 12px;
   height: 12px;
-  background-color: #3366cc;
+  background-color: #5D5C5B;
   border-radius: 50%;
 }
 
@@ -228,7 +228,7 @@ html {
   bottom: 20px;
   right: 20px;
   z-index: 999;
-  background-color: #3366cc;
+  background-color:#5D5C5B;
   color: #fff;
   border: none;
   border-radius: 30%;
@@ -274,7 +274,7 @@ html {
 }
 
 .callout-buttons .btn {
-  background: #3366cc;
+  background: #5D5C5B;
   color: white;
 }
 
@@ -308,7 +308,7 @@ html {
   height: 140px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #3366cc;
+  border: 3px solid #5D5C5B;
 }
 
 .hero-text {
@@ -326,7 +326,7 @@ html {
 }
 
 .skill-tags li {
-  background: #3366cc;
+  background: #5D5C5B;
   color: white;
   padding: 0.4rem 0.75rem;
   border-radius: 20px;
