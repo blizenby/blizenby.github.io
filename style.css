@@ -29,7 +29,7 @@ nav a {
   padding: 6px 12px;
   border-radius: 8px;
   text-decoration: none;
-  color: #3366cc;
+  color: #5D5C5B;
   transition: background-color 0.3s;
 }
 
@@ -288,7 +288,7 @@ html {
   transform: scale(1.15);
 }
 .hero {
-  background: #f0f4ff;
+  background: #A7AFB6;
   padding: 3rem 1rem;
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0,0,0,0.05);
