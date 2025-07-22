@@ -223,19 +223,20 @@ form input, form textarea {
 
 .timeline-entry {
   position: relative;
-  margin-bottom: 30px;
-  padding-left: 25px;
+  margin-bottom: 40px; /* increased spacing between entries */
+  padding-left: 40px;   /* more space between icon and text */
 }
 
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: -20px;
-  top: 6px;
-  width: 12px;
-  height: 12px;
+  left: -26px;         /* pushes the icon further from the line */
+  top: 4px;
+  width: 18px;         /* larger icon */
+  height: 18px;
   background-color: #5D5C5B;
   border-radius: 50%;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
 }
 
 .timeline-date {
