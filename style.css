@@ -238,7 +238,7 @@ form input, form textarea {
   content: "";
   position: absolute;
   top: 6px;
-  left: 12px;                    /* Position of the circle: near the line, but spaced */
+  left: 10px;                    /* Position of the circle: near the line, but spaced */
   width: 18px;
   height: 18px;
   background-color: #5D5C5B;
