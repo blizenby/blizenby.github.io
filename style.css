@@ -216,7 +216,7 @@ form input, form textarea {
 .timeline {
   position: relative;
   margin-left: 20px;             /* Base indentation of the whole section */
-  padding-left: 70px;            /* Distance between the timeline line and the text */
+  padding-left: 100px;            /* Distance between the timeline line and the text */
 }
 
 .timeline::before {
