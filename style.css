@@ -213,59 +213,60 @@ form input, form textarea {
   font-size: 0.9rem;
 }
 
-.timeline {
+.timeline-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
   position: relative;
-  padding-left: 50px; /* space for vertical line and bullets */
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  padding-left: 40px; /* space for vertical line */
 }
 
-/* Vertical timeline line */
-.timeline::before {
+.timeline-list::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 20px; /* vertical line position */
+  left: 15px;
   width: 3px;
   height: 100%;
   background-color: #5D5C5B;
   z-index: 0;
 }
 
-/* Remove default UL styles, add vertical spacing */
-.timeline-list {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-/* Each timeline entry with custom bullet */
 .timeline-entry {
-  position: relative;
   margin-bottom: 2.5rem;
-  padding-left: 30px; /* space between bullet and text */
+  position: relative;
 }
 
-/* Circular bullet */
-.timeline-entry::before {
-  content: "";
-  position: absolute;
-  left: 10px; /* bullet position (left of text) */
-  top: 1em; /* vertical center relative to first line of text */
+.date-bullet {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between bullet and date */
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0.5rem;
+  /* push to the left enough to clear the timeline line */
+  padding-left: 20px;
+}
+
+.timeline-bullet {
+  display: inline-block;
   width: 14px;
   height: 14px;
-  background-color:#5D5C5B; /* bullet color */
+  background-color: #5D5C5B;
   border-radius: 50%;
-  border: 2px solid #444; /* bullet border */
-  z-index: 1;
+  border: 2px solid #444;
+  flex-shrink: 0; /* prevent shrinking */
 }
 
-/* Date styling */
 .timeline-date {
   font-weight: bold;
   color: #555;
-  display: block;
-  margin-bottom: 0.5rem;
+  white-space: nowrap; /* keep date on one line */
+}
+
+/* The content paragraph below */
+.timeline-entry p {
+  margin-left: 54px; /* align text under the date & bullet */
 }
 
 /* Timeline title links */
