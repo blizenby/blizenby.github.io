@@ -214,30 +214,29 @@ form input, form textarea {
 }
 
 .timeline {
-  border-left: 4px solid #5D5C5B; /* Slightly thicker line */
-  margin-left: 40px;
-  padding-left: 30px;
+  border-left: 4px solid #5D5C5B;
+  margin-left: 60px;         /* Moves the whole timeline further right */
+  padding-left: 40px;        /* Adds more space between line and text */
   position: relative;
 }
 
 .timeline-entry {
   position: relative;
   margin-bottom: 40px;
-  padding-left: 35px; /* More space between circle and text */
+  padding-left: 40px;        /* Distance between circle and text */
 }
 
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: -60x; /* Moves the circle further left from the line */
+  left: -40px;               /* Moves circle farther left from the timeline line */
   top: 5px;
-  width: 18px; /* Bigger circle */
+  width: 18px;
   height: 18px;
   background-color: #5D5C5B;
   border-radius: 50%;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
-
 .timeline-date {
   font-weight: bold;
   color: #555;
