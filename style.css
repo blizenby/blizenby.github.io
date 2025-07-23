@@ -249,17 +249,15 @@ form input, form textarea {
 
 /* ICON STYLING */
 .timeline-icon {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  object-fit: cover; /* Ensures images scale inside the shape */
   background-color: #5D5C5B;
-  margin-left: -55px;
-  margin-bottom: 0.5rem;
-  position: relative;
+  position: absolute;
+  left: 21px; /* Matches your .timeline::before line at left: 30px; */
+  top: 0.5rem;
   z-index: 1;
 }
-
 /* TIMELINE TITLE */
 .timeline-title {
   font-size: 1.1rem;
