@@ -249,11 +249,12 @@ form input, form textarea {
 
 /* ICON STYLING */
 .timeline-icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
+  object-fit: cover; /* Ensures images scale inside the shape */
   background-color: #5D5C5B;
-  margin-left: -55px; /* Pushes the icon away from the text */
+  margin-left: -55px;
   margin-bottom: 0.5rem;
   position: relative;
   z-index: 1;
