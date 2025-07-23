@@ -251,12 +251,12 @@ form input, form textarea {
   content: "";
   position: absolute;
   left: 10px; /* bullet position (left of text) */
-  top: 0.8em; /* vertical center relative to first line of text */
+  top: 1em; /* vertical center relative to first line of text */
   width: 14px;
   height: 14px;
-  background-color: #3366cc; /* bullet color */
+  background-color:#5D5C5B; /* bullet color */
   border-radius: 50%;
-  border: 2px solid #003366; /* bullet border */
+  border: 2px solid #444; /* bullet border */
   z-index: 1;
 }
 
