@@ -229,7 +229,7 @@ form input, form textarea {
 .timeline-entry::before {
   content: "";
   position: absolute;
-  left: -40px;               /* Moves circle farther left from the timeline line */
+  left: +40px;               /* Moves circle farther left from the timeline line */
   top: 5px;
   width: 18px;
   height: 18px;
