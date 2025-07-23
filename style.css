@@ -213,33 +213,54 @@ form input, form textarea {
   font-size: 0.9rem;
 }
 
-/* TIMELINE CONTAINER */
 .timeline {
   position: relative;
-  padding-left: 80px;
+  padding-left: 50px; /* space for vertical line and bullets */
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-/* VERTICAL LINE */
+/* Vertical timeline line */
 .timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 30px; /* Move this LEFT for more spacing */
+  left: 20px; /* vertical line position */
   width: 3px;
   height: 100%;
   background-color: #5D5C5B;
   z-index: 0;
 }
 
-/* EACH TIMELINE ENTRY */
-.timeline-entry {
-  position: relative;
-  margin-bottom: 3rem;
+/* Remove default UL styles, add vertical spacing */
+.timeline-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
 }
 
-/* DATE STYLING */
+/* Each timeline entry with custom bullet */
+.timeline-entry {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding-left: 30px; /* space between bullet and text */
+}
+
+/* Circular bullet */
+.timeline-entry::before {
+  content: "";
+  position: absolute;
+  left: 10px; /* bullet position (left of text) */
+  top: 0.8em; /* vertical center relative to first line of text */
+  width: 14px;
+  height: 14px;
+  background-color: #3366cc; /* bullet color */
+  border-radius: 50%;
+  border: 2px solid #003366; /* bullet border */
+  z-index: 1;
+}
+
+/* Date styling */
 .timeline-date {
   font-weight: bold;
   color: #555;
@@ -247,37 +268,39 @@ form input, form textarea {
   margin-bottom: 0.5rem;
 }
 
-/* ICON STYLING */
-.timeline-icon {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #5D5C5B;
-  position: absolute;
-  left: 21px; /* Matches your .timeline::before line at left: 30px; */
-  top: 0.5rem;
-  z-index: 1;
-}
-/* TIMELINE TITLE */
+/* Timeline title links */
 .timeline-title {
   font-size: 1.1rem;
+  margin: 0.25rem 0 0.5rem 0;
   color: #000;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
-/* MOBILE ADJUSTMENTS */
+.timeline-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.timeline-title a:hover {
+  text-decoration: underline;
+}
+
+/* Leadership timeline spacing */
+.leadership-timeline {
+  margin-top: 1.5rem;
+}
+
+/* Responsive adjustments */
 @media screen and (max-width: 600px) {
   .timeline {
-    padding-left: 50px;
+    padding-left: 40px;
   }
 
   .timeline::before {
-    left: 20px;
+    left: 15px;
   }
 
-  .timeline-icon {
-    margin-left: -40px;
+  .timeline-entry::before {
+    left: 5px;
   }
 }
 
