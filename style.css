@@ -213,10 +213,10 @@ form input, form textarea {
   font-size: 0.9rem;
 }
 
-/* Container for the entire timeline */
+/* Timeline container */
 .timeline {
   position: relative;
-  padding-left: 80px; /* Controls space between the line/circles and your content */
+  padding-left: 100px; /* space between line/circles and text */
 }
 
 /* Vertical line */
@@ -224,28 +224,29 @@ form input, form textarea {
   content: "";
   position: absolute;
   top: 0;
-  left: 20px; /* Move the line left */
+  left: 30px; /* Line is 30px from the left edge of .timeline */
   width: 3px;
   height: 100%;
   background-color: #5D5C5B;
 }
 
-/* Each timeline entry */
+/* Individual timeline entry */
 .timeline-entry {
   position: relative;
   margin-bottom: 40px;
 }
 
-/* Circle for each timeline entry */
+/* Circle on the line */
 .timeline-entry::before {
   content: "";
   position: absolute;
-  top: 8px;              /* Controls vertical offset */
-  left: 11px;            /* Controls horizontal spacing from the line */
+  top: 8px;
+  left: 22px; /* Position the circle so it doesn't overlap the line */
   width: 20px;
   height: 20px;
   background-color: #5D5C5B;
   border-radius: 50%;
+  z-index: 1;
 }
 .timeline-date {
   font-weight: bold;
