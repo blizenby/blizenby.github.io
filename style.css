@@ -415,3 +415,11 @@ html {
 .icon-link img:hover {
   transform: scale(1.15);
 }
+.section-subtitle {
+  font-size: 2rem;       /* same size as h2 */
+  color: #3366cc;        /* same color as h2 */
+  font-weight: bold;
+  margin-top: 2.5rem;    /* spacing above */
+  margin-bottom: 1rem;   /* spacing below */
+  font-family: 'Segoe UI', sans-serif; /* ensure consistent font */
+}
