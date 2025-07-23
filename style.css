@@ -213,34 +213,37 @@ form input, form textarea {
   font-size: 0.9rem;
 }
 
+/* Container for the entire timeline */
 .timeline {
   position: relative;
-  margin-left: 20px;
-  padding-left: 120px; /* Increase space between timeline and text */
+  padding-left: 80px; /* Controls space between the line/circles and your content */
 }
 
+/* Vertical line */
 .timeline::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 0px; /* Move the vertical line further left */
+  left: 20px; /* Move the line left */
   width: 3px;
   height: 100%;
   background-color: #5D5C5B;
 }
 
+/* Each timeline entry */
 .timeline-entry {
   position: relative;
   margin-bottom: 40px;
 }
 
+/* Circle for each timeline entry */
 .timeline-entry::before {
   content: "";
   position: absolute;
-  top: 6px;
-  left: 6px; /* Place the circle 6px right of the vertical line */
-  width: 18px;
-  height: 18px;
+  top: 8px;              /* Controls vertical offset */
+  left: 11px;            /* Controls horizontal spacing from the line */
+  width: 20px;
+  height: 20px;
   background-color: #5D5C5B;
   border-radius: 50%;
 }
