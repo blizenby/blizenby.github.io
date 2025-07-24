@@ -111,63 +111,87 @@ nav a:hover {
 }
 
 /* Forms */
+/* CONTACT SECTION STYLING */
+#contact {
+  padding: 4rem 1rem;
+}
+
 #contact .container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
+/* Contact form container */
 #contact form {
   background: #f9f9f9;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 1.5rem;
+  box-sizing: border-box;
 }
 
-#contact label {
-  font-weight: 500;
-  margin-bottom: 0.25rem;
-  text-align: left;
-  width: 100%;
-}
-
+/* Text inputs and textarea */
 #contact input,
 #contact textarea {
+  width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 100%;
-  transition: border-color 0.2s;
+  transition: border-color 0.3s ease;
 }
 
+/* Hover/focus states */
 #contact input:focus,
 #contact textarea:focus {
   border-color: #0077cc;
   outline: none;
 }
 
+/* Labels */
+#contact label {
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+/* Submit button */
 #contact button {
   background-color: #0077cc;
-  color: white;
-  padding: 0.75rem 1.25rem;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
   font-size: 1rem;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   align-self: flex-end;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s ease;
 }
 
 #contact button:hover {
   background-color: #005fa3;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  #contact form {
+    padding: 1.25rem;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  #contact button {
+    align-self: center;
+    width: 100%;
+  }
 }
 
 /* Scroll to Top Button */
