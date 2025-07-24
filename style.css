@@ -420,22 +420,6 @@ html {
 .section h2 {
   text-align: center;
 }
-#contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-#contact form input,
-#contact form textarea,
-#contact form button {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1rem;
-}
 #contact {
   padding-bottom: 4rem;
   padding-top: 2rem;
