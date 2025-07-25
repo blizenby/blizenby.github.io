@@ -377,11 +377,21 @@ nav a:hover {
 }
 
 /* Footer */
-footer {
-  background: #222;
-  color: #ccc;
+.footer {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 0;
+  background-color: #222;
+  color: white;
+}
+
+.footer-contact a {
+  color: #ccc;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive Media Queries */
