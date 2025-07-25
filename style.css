@@ -378,38 +378,36 @@ nav a:hover {
 
 /* Footer */
 .footer {
-  text-align: center;
-  padding: 2rem 0;
   background-color: #222;
+  padding: 1.5rem 1rem;
   color: white;
 }
 
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 .footer-contact a {
-  color: #ccc;
-  margin: 0 0.5rem;
+  color: white;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .footer-contact a:hover {
   text-decoration: underline;
 }
-footer.footer-banner {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 1.5rem 0;
-  text-align: center;
-  font-size: 0.9rem;
+
+.footer-contact .icon-link img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
 }
 
-footer.footer-banner a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 0.75rem;
-  font-weight: 500;
-}
-
-footer.footer-banner a:hover {
-  text-decoration: underline;
+.footer-contact .icon-link img:hover {
+  transform: scale(1.2);
 }
 
 /* Responsive Media Queries */
