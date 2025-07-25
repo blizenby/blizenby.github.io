@@ -518,4 +518,72 @@ html {
   padding-bottom: 4rem;
   padding-top: 2rem;
 }
+.contact-split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.contact-form-wrapper {
+  flex: 1 1 55%;
+  min-width: 300px;
+}
+
+.contact-info {
+  flex: 1 1 35%;
+  min-width: 250px;
+  background: #f1f1f1;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #5D5C5B;
+}
+
+.contact-info p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-info .icon-link img {
+  width: 36px;
+  height: 36px;
+  transition: transform 0.3s ease;
+}
+
+.contact-info .icon-link img:hover {
+  transform: scale(1.15);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .contact-split {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+  }
+}
 
