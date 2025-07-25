@@ -177,3 +177,254 @@ footer.footer {
     margin: 5px 10px;
   }
 }
+✅ What This Does:
+Preserves your original layout and styling
+
+Adds a clean split layout to the contact page only
+
+Maintains footer design and icon handling
+
+Ensures mobile responsiveness
+
+Let me know if you'd like to:
+
+Adjust spacing or sizing
+
+Add subtle animations
+
+Improve typography while keeping the layout the same
+
+Would you like help next with restoring the homepage or testing the final layout?
+
+
+
+
+
+
+
+
+You said:
+this has still not been resolved
+
+
+ChatGPT said:
+Thanks for your patience — let’s get this 100% fixed now.
+
+You mentioned that:
+
+Your site’s appearance changed after the CSS updates.
+
+You want the site to look exactly as it did before, except for the Contact page, which should use a split layout (form on left, email + LinkedIn on right).
+
+The LinkedIn icon in the footer and contact section should work and remain styled.
+
+The footer should have its original black background and professional appearance.
+
+✅ Plan to Fix This
+I’ll give you a clean CSS file that:
+
+Restores all original layout/styling (header, sections, fonts, colors, spacing)
+
+Only adds layout styling for the new contact page
+
+Preserves the original look and feel site-wide
+
+Ensures the LinkedIn icon and footer match the original appearance
+
+✅ Final Fixed style.css
+Copy and paste this directly into your style.css file:
+
+css
+Copy
+Edit
+/* === Base Reset === */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* === Header === */
+header {
+  background-color: #0077b6;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.tagline {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+/* === Section Styling === */
+.section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* === Contact Page Split === */
+.contact-split {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.contact-form-wrapper {
+  flex: 1 1 48%;
+  text-align: left;
+}
+
+.contact-form-wrapper h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form-wrapper form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-wrapper label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.contact-form-wrapper input,
+.contact-form-wrapper textarea {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form-wrapper button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form-wrapper button:hover {
+  background-color: #005f8e;
+}
+
+/* === Contact Info === */
+.contact-info {
+  flex: 1 1 40%;
+  text-align: left;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #0077b6;
+  display: inline-block;
+}
+
+.contact-info img {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+}
+
+/* === Footer === */
+footer.footer {
+  background-color: #000;
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-contact a {
+  color: #ccc;
+}
+
+.footer-contact img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .contact-split {
+    flex-direction: column;
+  }
+
+  .contact-form-wrapper,
+  .contact-info {
+    flex: 1 1 100%;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
