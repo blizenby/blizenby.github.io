@@ -586,12 +586,13 @@ html {
     width: 100%;
   }
 }
+/* Contact page two-column layout fix */
 .contact-split {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 2rem;
   margin-top: 2rem;
 }
 
@@ -599,10 +600,4 @@ html {
 .contact-info {
   flex: 1 1 45%;
   min-width: 280px;
-}
-
-.contact-info img {
-  width: 32px;
-  height: 32px;
-  vertical-align: middle;
 }
