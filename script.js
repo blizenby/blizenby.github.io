@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function showSection(id) {
   sections.forEach(section => {
-    if (section.id === 'contact') {
-      section.style.display = 'block'; // always visible
+    if (section.id === id) {
+      section.style.display = 'block';
     } else {
       section.style.display = 'none';
     }
   });
+}
+
 
   const target = document.getElementById(id);
   if (target) {
