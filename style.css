@@ -116,12 +116,35 @@ nav a:hover {
   padding: 4rem 1rem;
 }
 
-#contact .container {
+#contact > .container {
+  padding: 0 1rem; /* keep padding if needed */
+}
+
+/* And remove the flex & centering */
+
+#contact .contact-split {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+/* Also make sure the contact form and info share space */
+.contact-form-wrapper {
+  flex: 1 1 55%;
+  min-width: 300px;
+}
+
+.contact-info {
+  flex: 1 1 35%;
+  min-width: 250px;
+  background: #f1f1f1;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left; /* Align text left */
 }
 
 /* Contact form container */
