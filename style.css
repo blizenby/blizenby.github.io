@@ -1,10 +1,8 @@
 /* === Base === */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
   color: #333;
 }
 
@@ -17,137 +15,128 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 /* === Header === */
 header {
-  background: #0077b6;
-  color: white;
-  padding: 1.5rem 0;
+  background-color: #0077b6;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 2rem;
 }
 
 .tagline {
+  margin-top: 5px;
   font-size: 1rem;
-  margin-top: 0.25rem;
-  opacity: 0.9;
 }
 
 nav {
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 
 nav a {
-  margin-right: 1rem;
-  color: white;
-  font-weight: 500;
+  color: #fff;
+  margin: 0 10px;
+  font-weight: bold;
 }
 
 nav a[aria-current="page"] {
   text-decoration: underline;
 }
 
-/* === Section Styling === */
+/* === Sections === */
 .section {
-  padding: 3rem 0;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .section h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
-/* === Contact Page Layout === */
-#contact .container {
+/* === Contact Page Split === */
+.contact-split {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.contact-form-wrapper {
+  flex: 1 1 48%;
   text-align: left;
 }
 
-.contact-form-wrapper,
-.contact-info {
-  flex: 1 1 45%;
-  min-width: 280px;
-}
-
-/* Contact Form */
 .contact-form-wrapper form {
   display: flex;
   flex-direction: column;
 }
 
 .contact-form-wrapper label {
-  margin-top: 1rem;
-  font-weight: 600;
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .contact-form-wrapper input,
 .contact-form-wrapper textarea {
-  padding: 0.6rem;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin-top: 0.5rem;
-  font-size: 1rem;
 }
 
 .contact-form-wrapper button {
-  margin-top: 1.5rem;
-  background: #0077b6;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #0077b6;
   color: white;
-  padding: 0.7rem;
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
   cursor: pointer;
 }
 
 .contact-form-wrapper button:hover {
-  background: #005f8e;
+  background-color: #005f8e;
 }
 
-/* Contact Info (right side) */
+.contact-info {
+  flex: 1 1 40%;
+  text-align: left;
+}
+
 .contact-info h3 {
   margin-top: 0;
-  font-size: 1.4rem;
-}
-
-.contact-info p {
-  margin: 1rem 0;
 }
 
 .contact-info a {
   color: #0077b6;
-  font-weight: 500;
+  display: inline-block;
+  margin-top: 5px;
 }
 
 .contact-info img {
   width: 32px;
   height: 32px;
-  vertical-align: middle;
-  margin-top: 0.5rem;
+  margin-top: 5px;
 }
 
 /* === Footer === */
 footer.footer {
   background-color: #000;
-  color: #fff;
-  padding: 1rem 0;
-  margin-top: 4rem;
+  color: #ccc;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -155,8 +144,8 @@ footer.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-contact a {
@@ -166,14 +155,12 @@ footer.footer {
 .footer-contact img {
   width: 24px;
   height: 24px;
-  vertical-align: middle;
 }
 
-/* === Responsive Design === */
+/* === Responsive === */
 @media (max-width: 768px) {
-  #contact .container {
+  .contact-split {
     flex-direction: column;
-    text-align: left;
   }
 
   .contact-form-wrapper,
@@ -182,11 +169,11 @@ footer.footer {
   }
 
   nav {
-    text-align: center;
+    margin-top: 15px;
   }
 
   nav a {
     display: inline-block;
-    margin: 0.5rem;
+    margin: 5px 10px;
   }
 }
