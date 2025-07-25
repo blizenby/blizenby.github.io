@@ -393,6 +393,24 @@ nav a:hover {
 .footer-contact a:hover {
   text-decoration: underline;
 }
+footer.footer-banner {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer.footer-banner a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 0.75rem;
+  font-weight: 500;
+}
+
+footer.footer-banner a:hover {
+  text-decoration: underline;
+}
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
