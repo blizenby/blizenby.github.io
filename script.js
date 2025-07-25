@@ -4,21 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.section');
 
   function showSection(id) {
-  sections.forEach(section => {
-    if (section.id === id) {
-      section.style.display = 'block';
-    } else {
-      section.style.display = 'none';
-    }
-  });
-}
-
-
-  const target = document.getElementById(id);
-  if (target) {
-    target.style.display = 'block';
+    sections.forEach(section => {
+      if (section.id === id) {
+        section.style.display = 'block';
+      } else {
+        section.style.display = 'none';
+      }
+    });
   }
-}
 
   // Show 'home' by default
   showSection('home');
@@ -53,22 +46,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }, 200);
     });
   });
-const scrollBtn = document.getElementById('scrollToTopBtn');
 
-// Show button when scrolling down
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    scrollBtn.style.display = 'flex';
-  } else {
-    scrollBtn.style.display = 'none';
-  }
-});
+  const scrollBtn = document.getElementById('scrollToTopBtn');
 
-// Scroll to top when clicked
-scrollBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
+  // Show button when scrolling down
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = 'flex';
+    } else {
+      scrollBtn.style.display = 'none';
+    }
+  });
+
+  // Scroll to top when clicked
+  scrollBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   });
 });
-  });
