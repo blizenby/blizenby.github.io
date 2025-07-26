@@ -122,19 +122,10 @@ nav a:hover {
 
 /* And remove the flex & centering */
 
-#contact .contact-split {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 2rem;
-}
-
 /* Also make sure the contact form and info share space */
-.contact-form-wrapper {
-  flex: 1 1 55%;
-  min-width: 300px;
+#contact .contact-form-wrapper form {
+  max-width: 600px;
+  width: 100%;
 }
 
 .contact-info {
