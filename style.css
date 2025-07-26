@@ -116,10 +116,17 @@ nav a:hover {
   padding: 4rem 1rem;
 }
 
-#contact > .container {
-  padding: 0 1rem; /* keep padding if needed */
+#contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1rem;
 }
 
+#contact form {
+  max-width: 600px;
+  width: 100%;
+}
 /* And remove the flex & centering */
 
 /* Also make sure the contact form and info share space */
