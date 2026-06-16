@@ -1,13 +1,13 @@
 
 :root {
   --navy: #2C3E50;
-  --accent: #4A7FA5;
-  --accent-hover: #3a6a8e;
-  --bg: #F7F8FA;
+  --accent: #A0876A;
+  --accent-hover: #8a7059;
+  --bg: #FAF8F5;
   --card-bg: #ffffff;
   --text: #2a2a2a;
-  --muted: #5a6472;
-  --divider: #d4dbe3;
+  --muted: #5a5650;
+  --divider: #ddd8d0;
 }
  
 /* ─── Base ─────────────────────────────────────────── */
@@ -413,7 +413,7 @@ nav a:hover {
  
 /* ─── Footer ────────────────────────────────────────── */
 .footer {
-  background-color: #1a2530;
+ background-color: var(--navy);
   padding: 1.5rem 1rem;
   color: white;
 }
