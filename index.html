@@ -6,15 +6,16 @@
   <title>Ben Lisenby | Mechanical Engineer </title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="icon" href="favicon.png" type="image/png">
- 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Lora:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <button id="scrollToTopBtn" title="Back to top">
-</button>
+  <button id="scrollToTopBtn" title="Back to top">↑</button>
   <header>
     <div class="container">
       <h1>Ben Lisenby</h1>
-      <p class="tagline">Mechanical Engineer </p>
+      <p class="tagline">Mechanical Engineer</p>
       <nav>
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -26,37 +27,28 @@
   
 <section id="home" class="section hero">
   <div class="container hero-content">
-    <img src="ben-headshot.jpg" alt="Ben Lisenby headshot" class="hero-img" />
-
-    <div class="hero-text">
-      <h2>I make things that (usually) don't break</h2>
-      <p>Every since I was a kid, I have been fascinated with how the world works.
-        This led to an early interest in physics, which eventually made me fall in love with building things (engineering). 
-        A guiding principle or motto I have for my life is "do hard things" (this is likely not original to me lol). 
-        I try to apply this to my personal, professional, and academic life. Over the past four years this has meant climbing a 14er after only being in Colorado for 3 weeks, 
-        building a spacecraft thermal model from scratch, and serving as a student leader for a study abroad trip in a foreign country. 
-        Overall, I am always up for a challenge and welcome learning opportunities. 
-
-      <p>This website primarily serves as my portfolio, but if you would rather skip the rest of my website, you can download my resume. This is a pretty concise description of what I've been up to lately</p>
-      
-      <div class="home-callout">
-        <div class="callout-buttons">
-          <a href="Ben_Lisenby_Resume.pdf" target="_blank" class="btn">Download Resume</a>
-          </a>
-        </div>
-      </div>
+ 
+    <div class="hero-left">
+      <img src="ben-headshot.jpg" alt="Ben Lisenby headshot" class="hero-img" />
+      <a href="Ben_Lisenby_Resume.pdf" target="_blank" class="btn hero-resume-btn">Download Resume</a>
     </div>
+ 
+    <div class="hero-text">
+      <p class="hero-eyebrow">Junior ME · Taylor University</p>
+      <h2>I make things that (usually) don't break.</h2>
+      <p class="hero-bio">Every since I was a kid, I have been fascinated with how the world works. This led to an early interest in physics, which eventually made me fall in love with building things (engineering). A guiding principle or motto I have for my life is "do hard things" (this is likely not original to me lol). I try to apply this to my personal, professional, and academic life. Over the past four years this has meant climbing a 14er after only being in Colorado for 3 weeks, building a spacecraft thermal model from scratch, and serving as a student leader for a study abroad trip in a foreign country. Overall, I am always up for a challenge and welcome learning opportunities.</p>
+
+    </div>
+ 
   </div>
 </section>
    
 <section id="about" class="section">
   <div class="container">
     <h2>About Me</h2>
-
-    <!-- Work Experience Subtitle -->
+ 
     <h3 class="section-subtitle">Summary of Engineering Experience</h3>
-
-    <!-- Education & Experience Timeline -->
+ 
     <div class="timeline">
       <ul class="timeline-list">
         <li class="timeline-entry">
@@ -66,7 +58,7 @@
           </div>
           <p>My first engineering experiences as a kid were working with LEGO® sets. This position also allowed me to work from home :)</p>
         </li>
-
+ 
         <li class="timeline-entry">
           <div class="date-bullet">
             <span class="timeline-bullet"></span>
@@ -77,7 +69,7 @@
           </h4>
           <p>Studying Mechanical Engineering with a focus on design, analysis, and manufacturing methods. See my portfolio for a full description of all of my projects.</p>
         </li>
-
+ 
         <li class="timeline-entry">
           <div class="date-bullet">
             <span class="timeline-bullet"></span>
@@ -86,36 +78,31 @@
           <h4 class="timeline-title">
             <a href="#dannar">Mechanical Engineering Internship at Dannar</a>
           </h4>
-          <p>At Dannar I utilized Solidworks to design mounting brackets for autonomy system components.I also redesigned mounts for the motor and gearbox in addtion to the spline adapter.
-          I also performed reasarch, calculations, and measurements to determine new parts for a variety of vehicle systems such as hydraulic, fastening, enclosures, cooling, and electrical.
-          I worked in a team to create a database that documented fastener use to decreae prodcution lead time and decrease costs.I also wrote a program to automate Engineering Change Requests in Jira. 
-          Finally, I worked in an interdiscipinary team to design an in-house portable battery charger to charge batteries in storage and decrease work time for technicians. </p>
+          <p>At Dannar I utilized SolidWorks to design mounting brackets for autonomy system components. I also redesigned mounts for the motor and gearbox in addition to the spline adapter.
+          I performed research, calculations, and measurements to determine new parts for vehicle systems including hydraulic, fastening, enclosures, cooling, and electrical.
+          I worked in a team to create a database that documented fastener use to decrease production lead time and costs. I also wrote a program to automate Engineering Change Requests in Jira.
+          Finally, I worked in an interdisciplinary team to design an in-house portable battery charger to reduce work time for technicians.</p>
         </li>
       </ul>
-
-      <!-- Leadership Section -->
+ 
       <h3 class="section-subtitle" style="margin-top: 3rem;">Leadership Experience</h3>
-
+ 
       <ul class="timeline-list leadership-timeline">
         <li class="timeline-entry">
           <div class="date-bullet">
             <span class="timeline-bullet"></span>
             <span class="timeline-date">2023–Present</span>
           </div>
-          <h4 class="timeline-title">
-            Honors Guild Cabinet Member
-          </h4>
+          <h4 class="timeline-title">Honors Guild Cabinet Member</h4>
           <p>Worked alongside University Faculty, Staff, and fellow Cabinet Members to plan and facilitate social and academic events. Built relationships with students in the Honors Program and helped foster a vibrant and academically engaged community.</p>
         </li>
-
+ 
         <li class="timeline-entry">
           <div class="date-bullet">
             <span class="timeline-bullet"></span>
             <span class="timeline-date">2024–Present</span>
           </div>
-          <h4 class="timeline-title">
-            Calculus-Based Physics Teaching Assistant
-          </h4>
+          <h4 class="timeline-title">Calculus-Based Physics Teaching Assistant</h4>
           <p>Assisted professors with labs, helped students understand physics concepts, signed checkpoint sheets, and handled setup/teardown of lab equipment.</p>
         </li>
       </ul>
@@ -123,11 +110,10 @@
   </div>
 </section>
   
- <section id="portfolio" class="section hidden-section">
+<section id="portfolio" class="section hidden-section">
   <div class="container">
     <h2>Engineering Portfolio</h2>
-
-    <!-- 🎓 Taylor University -->
+ 
     <div id="taylor" class="portfolio-subsection">
       <h3>Taylor University Projects</h3>
       <div class="project">
@@ -137,10 +123,8 @@
           <p>Developed models for kinematic control of a 3DOF robotic arm using MATLAB and Simulink. Integrated into a LEGO prototype.</p>
         </div>
       </div>
-      <!-- Add more Taylor projects here -->
     </div>
-
-    <!-- 🏭 DANNAR Internship -->
+ 
     <div id="dannar" class="portfolio-subsection">
       <h3>DANNAR Internship Work</h3>
       <div class="project">
@@ -150,10 +134,8 @@
           <p>Created Fusion360 macros to speed up enclosure design. Collaborated on part validation using DFM principles.</p>
         </div>
       </div>
-      <!-- Add more DANNAR projects here -->
     </div>
-
-    <!-- 🤖 Personal or Extracurricular Projects (optional) -->
+ 
     <div id="personal" class="portfolio-subsection">
       <h3>Personal Projects</h3>
       <div class="project">
@@ -163,33 +145,32 @@
           <p>Designed and built a functional robotic arm with LEGO Technic, controlled by Arduino and modeled in MATLAB.</p>
         </div>
       </div>
-      <!-- Add more personal projects here -->
     </div>
   </div>
-   <p><a href="Ben_Lisenby_Portfolio.pdf" target="_blank" class="btn">Download My Portfolio (PDF)</a></p>
-  </section>
+  <p><a href="Ben_Lisenby_Portfolio.pdf" target="_blank" class="btn">Download My Portfolio (PDF)</a></p>
+</section>
   
-  <section id="contact" class="section hidden-section">
+<section id="contact" class="section hidden-section">
   <div class="container contact-container">
     <div class="contact-form">
       <h2>Leave a message and I'll get back to you!</h2>
       <form action="https://formspree.io/f/xzzglkjb" method="POST">
         <label for="name">Your Name:</label><br />
         <input type="text" name="name" id="name" required /><br /><br />
-
+ 
         <label for="email">Your Email:</label><br />
         <input type="email" name="email" id="email" required /><br /><br />
-
+ 
         <label for="message">Message:</label><br />
         <textarea name="message" id="message" rows="5" required></textarea><br /><br />
-
+ 
         <button type="submit">Send Message</button>
       </form>
     </div>
   </div>
 </section>
   
-  <footer class="footer">
+<footer class="footer">
   <div class="container footer-contact">
     <a href="mailto:benlisenby@outlook.com">benlisenby@outlook.com</a>
     <span> | </span>
