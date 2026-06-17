@@ -1,8 +1,7 @@
-
 :root {
   --navy: #2C3E50;
-  --accent: #ddd8d0;
-  --accent-hover: #ddd8d0;
+  --accent: #A0876A;
+  --accent-hover: #8a7059;
   --bg: #FAF8F5;
   --card-bg: #ffffff;
   --text: #2a2a2a;
@@ -43,7 +42,7 @@ header h1 {
 header .tagline {
   font-size: 0.78rem;
   margin: 0.3rem 0 0.6rem;
-  color: #ddd8d0;
+  color: #b0bec8;
   font-weight: 400;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -54,7 +53,7 @@ nav a {
   padding: 5px 12px;
   border-radius: 6px;
   text-decoration: none;
-  color: #d0dce8;
+  color: #d8d2c8;
   font-weight: 500;
   font-size: 0.9rem;
   transition: background-color 0.2s, color 0.2s;
@@ -85,7 +84,7 @@ nav a:hover {
  
 /* ─── Hero ──────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(135deg, #e4ecf4 0%, var(--card-bg) 100%);
+  background: linear-gradient(135deg, #f0ece4 0%, #e8e0d4 100%);
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(44,62,80,0.10);
   padding: 3.5rem 2.5rem;
@@ -185,7 +184,7 @@ nav a:hover {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--navy);
-  background: rgba(44,62,80,0.08);
+  background: rgba(160,135,106,0.12);
   border-radius: 3px;
   padding: 1px 6px;
   margin-right: 6px;
@@ -314,7 +313,7 @@ nav a:hover {
  
 .timeline-list {
   list-style: none;
-  padding-left: 40px;
+  padding-left: 34px;
   margin: 0;
   position: relative;
 }
@@ -323,17 +322,21 @@ nav a:hover {
   content: "";
   position: absolute;
   top: 0;
-  left: 15px;
+  left: 9px;
   width: 3px;
   height: 100%;
   background-color: var(--accent);
-  opacity: 0.35;
+  opacity: 0.45;
   z-index: 0;
 }
  
 .timeline-entry {
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.75rem;
   position: relative;
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(44,62,80,0.07);
+  padding: 1.25rem 1.5rem 1.5rem;
 }
  
 .date-bullet {
@@ -342,8 +345,8 @@ nav a:hover {
   gap: 8px;
   position: relative;
   z-index: 1;
-  margin-bottom: 0.4rem;
-  padding-left: 20px;
+  margin-bottom: 0.5rem;
+  padding-left: 0;
 }
  
 .timeline-bullet {
@@ -354,25 +357,26 @@ nav a:hover {
   border-radius: 50%;
   border: 2px solid var(--navy);
   flex-shrink: 0;
+  margin-left: -34px;
 }
  
 .timeline-date {
   font-size: 0.82rem;
   font-weight: 600;
-  color: var(--accent);
+  color: var(--accent-hover);
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
  
 .timeline-entry p {
-  margin-left: 54px;
+  margin-left: 0;
   color: var(--muted);
   line-height: 1.65;
 }
  
 .timeline-title {
   font-size: 1rem;
-  margin: 0.2rem 0 0.4rem 54px;
+  margin: 0.2rem 0 0.5rem 0;
   color: var(--navy);
   font-weight: 600;
 }
@@ -413,7 +417,7 @@ nav a:hover {
  
 /* ─── Footer ────────────────────────────────────────── */
 .footer {
- background-color: var(--navy);
+  background-color: var(--navy);
   padding: 1.5rem 1rem;
   color: white;
 }
