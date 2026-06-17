@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Show 'home' by default
-  showSection('About Me');
+  showSection('about me');
 
   // Handle nav bar buttons
   navLinks.forEach(link => {
