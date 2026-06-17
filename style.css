@@ -91,9 +91,9 @@ nav a:hover {
  
 /* ─── Hero ──────────────────────────────────────────── */
 .hero {
-  background: linear-gradient(135deg, #f0ece4 0%, #e8e0d4 100%);
+  background: var(--card-bg);
   border-radius: 16px;
-  box-shadow: 0 8px 32px rgba(44,62,80,0.10);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.08);
   padding: 3.5rem 2.5rem;
   margin-bottom: 2rem;
   max-width: 1100px;
