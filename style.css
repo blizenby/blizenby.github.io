@@ -341,6 +341,7 @@ nav a:hover {
   margin-bottom: 1.5rem;
   position: relative;
   background: var(--bg);
+  border: 1px solid var(--divider);
   border-radius: 10px;
   padding: 1.1rem 1.4rem 1.3rem;
 }
