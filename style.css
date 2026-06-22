@@ -630,7 +630,6 @@ html {
   margin-bottom: 1.5rem;
 }
  
-/* Responsive grid: 3 columns on wide, 2 on medium, 1 on mobile */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -638,18 +637,13 @@ html {
 }
  
 @media (max-width: 900px) {
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .project-grid { grid-template-columns: repeat(2, 1fr); }
 }
  
 @media (max-width: 560px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
+  .project-grid { grid-template-columns: 1fr; }
 }
  
-/* Card */
 .project-card {
   background: #fff;
   border-radius: 10px;
@@ -678,7 +672,6 @@ html {
   box-shadow: none;
 }
  
-/* Gallery area */
 .project-gallery {
   position: relative;
   width: 100%;
@@ -702,7 +695,6 @@ html {
   display: block;
 }
  
-/* Prev/Next arrows — only shown when there are multiple images */
 .gallery-arrow {
   position: absolute;
   top: 50%;
@@ -725,14 +717,10 @@ html {
   font-weight: bold;
 }
  
-.gallery-arrow:hover {
-  background: rgba(255,255,255,1);
-}
- 
+.gallery-arrow:hover { background: rgba(255,255,255,1); }
 .gallery-arrow--prev { left: 8px; }
 .gallery-arrow--next { right: 8px; }
  
-/* Dot indicators */
 .gallery-dots {
   position: absolute;
   bottom: 8px;
@@ -751,13 +739,11 @@ html {
   border: 1px solid rgba(0,0,0,0.2);
   cursor: pointer;
   transition: background 0.2s;
+  padding: 0;
 }
  
-.gallery-dot.active {
-  background: #fff;
-}
+.gallery-dot.active { background: #fff; }
  
-/* Text area below image */
 .project-info {
   padding: 1rem 1.1rem 1.2rem;
   flex: 1;
@@ -779,7 +765,6 @@ html {
   line-height: 1.5;
 }
  
-/* Portfolio download button row */
 .portfolio-download {
   text-align: center;
   margin-top: 2rem;
