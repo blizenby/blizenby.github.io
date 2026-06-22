@@ -75,7 +75,6 @@ document.addEventListener('DOMContentLoaded', () => {
  
       let current = 0;
  
-      // Build dots
       images.forEach((_, i) => {
         const dot = document.createElement('button');
         dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
@@ -84,7 +83,6 @@ document.addEventListener('DOMContentLoaded', () => {
         dotsContainer.appendChild(dot);
       });
  
-      // Build arrows
       const prev = document.createElement('button');
       prev.className = 'gallery-arrow gallery-arrow--prev';
       prev.innerHTML = '&#8249;';
@@ -123,3 +121,4 @@ document.addEventListener('DOMContentLoaded', () => {
  
   portfolioObserver.observe(portfolioSection, { attributes: true, attributeFilter: ['style'] });
 });
+ 
