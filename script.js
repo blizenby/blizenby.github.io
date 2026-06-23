@@ -5,7 +5,7 @@ const PROJECTS = {
   'marble-sorter': {
     title: 'Marble Sorter',
     description: 'Coming soon.',
-    photos: ['taylor_project1.jpg']
+    photos: ['sorter_photo_1.png']
   },
   'pente-game': {
     title: 'Pente Game',
