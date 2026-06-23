@@ -571,8 +571,10 @@ nav a.active {
   }
  
   .hero-img {
-    width: 160px;
-    height: 200px;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    aspect-ratio: 4 / 5;
   }
  
   .hero-actions {
