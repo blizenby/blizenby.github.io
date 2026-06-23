@@ -438,6 +438,27 @@ nav a.active {
   aspect-ratio: 4 / 3;
   overflow: hidden;
   background: var(--divider);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+/* Placeholder label shown when no real image exists */
+.project-img-wrap::after {
+  content: 'Photo coming soon';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--muted);
+  opacity: 0.6;
+  pointer-events: none;
 }
  
 .project-img-wrap img {
@@ -446,6 +467,15 @@ nav a.active {
   object-fit: cover;
   display: block;
   transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+ 
+/* Hide broken/missing images so the placeholder ::after shows through */
+.project-img-wrap img[src="taylor_project1.jpg"],
+.project-img-wrap img[src="dannar_project1.jpg"],
+.project-img-wrap img[src="lego_robot.jpg"] {
+  display: none;
 }
  
 .project-card:hover .project-img-wrap img {
@@ -669,11 +699,12 @@ nav a.active {
   position: relative;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #1a2530;
+  background: var(--bg);
   border-radius: 16px 16px 0 0;
   overflow: hidden;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--divider);
 }
  
 .gallery-track-wrap {
@@ -705,9 +736,9 @@ nav a.active {
   top: 50%;
   transform: translateY(-50%);
   z-index: 5;
-  background: rgba(255,255,255,0.15);
-  border: none;
-  color: white;
+  background: rgba(255,255,255,0.85);
+  border: 1px solid var(--divider);
+  color: var(--navy);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -716,10 +747,14 @@ nav a.active {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background 0.2s;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
  
-.gallery-arrow:hover { background: rgba(255,255,255,0.30); }
+.gallery-arrow:hover {
+  background: white;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.18);
+}
 .gallery-prev { left: 0.75rem; }
 .gallery-next { right: 0.75rem; }
  
