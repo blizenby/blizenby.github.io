@@ -4,8 +4,8 @@
 const PROJECTS = {
   'marble-sorter': {
     title: 'Marble Sorter',
-    description: 'I worked as part of a two-person team to design ',
-    photos: ['sorter_photo_1.png']
+    description: 'I worked as part of a two-person team to design a machine to sort marbles my color and size',
+    photos: ['sorter_photo_1.png', 'sorter_photo_2.jpg']
   },
   'pente-game': {
     title: 'Pente Game',
