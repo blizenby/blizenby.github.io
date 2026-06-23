@@ -4,8 +4,8 @@
 const PROJECTS = {
   'marble-sorter': {
     title: 'Marble Sorter',
-    description: 'I worked as part of a two-person team to design a machine to sort marbles my color and size',
-    photos: ['sorter_photo_1.png', 'sorter_photo_2.jpg']
+    description: 'I worked as part of a two-person team to design a machine to sort marbles my color and size. I was resposbile for design of the color sorting system (turntables and gates), wire-routing, and mechanical integration of stepper motors and servos.',
+    photos: ['sorter_photo_1.jpg', 'sorter_photo_2.jpg']
   },
   'pente-game': {
     title: 'Pente Game',
