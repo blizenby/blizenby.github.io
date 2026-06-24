@@ -9,8 +9,8 @@ const PROJECTS = {
   },
   'laser-gun': {
     title: 'Laser Gun',
-    description: 'Coming soon.',
-    photos: ['taylor_project1.jpg']
+    description: 'I designed a laser gun to activate a target by delivering a 16 KHz laser pulse. I selected components to meet design constraints, designed the PCB layout, prototyped the system on a breadboard, assembled the entire laser gun, and completed final testing with the assembled device. ',
+    photos: ['laser_photo_1.jpg','laser_photo_2.jpg','laser_photo_3.jpg','laser_photo_4.jpg','laser_photo_5.jpg']
   },
   'statics-bridge': {
     title: 'Statics Bridge',
