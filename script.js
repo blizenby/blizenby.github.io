@@ -7,11 +7,6 @@ const PROJECTS = {
     description: 'I worked as part of a two-person team to design a machine to sort marbles my color and size. I was responsible for design of the color sorting system (turntables and gates), mechanical integration of stepper motors, servos, and sensors, and the funnel and loading subsystem.',
     photos: ['sorter_photo_1.jpg', 'sorter_photo_2.jpg','sorter_photo_3.jpg','sorter_photo_4.jpg']
   },
-  'pente-game': {
-    title: 'Pente Game',
-    description: 'Coming soon.',
-    photos: ['taylor_project1.jpg']
-  },
   'laser-gun': {
     title: 'Laser Gun',
     description: 'Coming soon.',
