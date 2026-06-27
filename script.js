@@ -14,8 +14,8 @@ const PROJECTS = {
   },
   'statics-bridge': {
     title: 'Statics Bridge',
-    description: 'Coming soon.',
-    photos: ['taylor_project1.jpg']
+    description: 'I was a part of a two-person team that designed a bridge with the goal of holding an impulse load of 50 pounds force. I was resposnsible for building an excel sheet to automate structural analysis calculations to verify bridge design. My team''s bridge design withstood an impulse load of 111.57 pounds force, placing second in the class. Additonally, my analysis correctly predicted the exact failture points of the bridge.',
+    photos: ['statics_photo_4.jpg','statics_photo_1.jpg','statics_photo_2.jpg','statics_photo_3.jpg']
   },
   'hovercraft': {
     title: 'Hovercraft Competition',
