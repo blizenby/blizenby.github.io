@@ -20,7 +20,7 @@ const PROJECTS = {
   'hovercraft': {
     title: 'Hovercraft Competition',
     description: 'I was a member of a team, competing a hovercraft racing competition. We designed our hovercraft from scratch, using a combination of custom and OTS parts. I was responsble for designing the lift subsystem, mechanical interfaces for the electrical subsystems, and performing a motor analysis to determine and verify the optimal propellor and motor combination. Finally, I designed a key addition to our thrust fans to increase air flow, leading to a 35-50% increase in speed. Overall, our team finished 2nd overall in the university-wide competition.  ',
-    photos: ['hovercraft_photo_4.jpg','hovercraft_photo_2.jpg','hovercraft_photo_3.jpg','hovercraft_photo_1.jpg']
+    photos: ['hovercraft_photo_4.jpg','hovercraft_photo_2.jpg','hovercraft_photo_3.jpg','hovercraft_photo_1.jpg','hovercraft_photo_5.jpg']
   },
   'manufacturing': {
     title: 'Manufacturing Methods',
