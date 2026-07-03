@@ -30,7 +30,7 @@ const PROJECTS = {
   'inverted-pendulum': {
     title: 'Control Systems Project',
     description: 'I was part of a two-person team that designed a control system to balence an inverted pendulum using a linear actuator on a track. I was responsible for the mathematical modeling that was used to describe the system and model its response. I also performed the analysis and simulation to determine viable values for our PID controller.',
-    photos: ['taylor_project1.jpg']
+    photos: ['cc_photo_4.jpg','cc_photo_3.jpg','cc_photo_2.jpg','cc_photo_1.jpg']
   },
   'airfoil': {
     title: 'Airfoil Simulation & Wind-Tunnel Testing',
