@@ -23,7 +23,7 @@ const PROJECTS = {
     photos: ['hovercraft_photo_4.jpg','hovercraft_photo_2.jpg','hovercraft_photo_3.jpg','hovercraft_photo_1.jpg','hovercraft_photo_5.jpg']
   },
   'manufacturing': {
-    title: 'Manufacturing Methods Projects',
+    title: 'Manufacturing Methods Project',
     description: 'I was a student in project-based class focused on DFM, manufacturing processes, and engineering drawings. The main focus of the class was on designing CNC machined parts, but I also learned basic principles of design/manufacturing for welding and manual milling/lathe. For my main project, I designed and manufactured a "desk organizer" using CNC machining, waterjet cutting, and manual milling/lathe operation. I was responsible for creating engineering drawings for each part and CAM programs (when applicable).',
     photos: ['mm_photo_1.jpg','mm_photo_2.jpg','mm_photo_3.jpg','mm_photo_4.jpg','mm_photo_5.jpg']
   },
