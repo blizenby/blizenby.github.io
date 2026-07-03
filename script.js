@@ -34,8 +34,8 @@ const PROJECTS = {
   },
   'airfoil': {
     title: 'Airfoil Simulation & Wind-Tunnel Testing',
-    description: 'Coming soon.',
-    photos: ['taylor_project1.jpg']
+    description: 'I was part of a team, measuring the drag coefficinet of a NACA 2414 Airfoil as a function of angle. I was responsible for performing a literature review into similar experiments\' results, CFD simulation of the airfoil at various angles, and data analysis to compare experimental, CFD, and literature results. Overall, our team found higher error that expected due to the small wind tunnel setup. However, our experimental results were within 25% of the literature values.',
+    photos: ['wt_photo_4.jpg','wt_photo_1.jpg','wt_photo_2.jpg']
   },
   'thermal-model': {
     title: 'MATLAB Thermal Model',
