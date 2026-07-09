@@ -40,7 +40,7 @@ const PROJECTS = {
   'thermal-model': {
     title: 'Thermal Modeling and Analysis',
     description: 'I owned thermal model development as member of the thermal management team on a research group developing robotic solutions for space. I developed a lumped-capacitance thermal model for the robot in MATLAB. My thermal model encorporates the effects of orbital dynamics, mission-specifc electrical duty cycles, and active heat dissipation via thermal louvers. Additionally, I am informing thermal design and analysis throughout the entire research group, collaborating with electrical, robot joint, robot body, and structure teams to define thermal requirements. My modeling is informing the design of future hardware, mission architecture, and test plans.',
-    photos: ['taylor_project1.jpg']
+    photos: ['research_photo_1.jpg','research_photo_4.jpg','research_photo_2.jpg','research_photo_3.jpg']
   },
   'dannar': {
     title: 'Dannar',
